@@ -1,0 +1,45 @@
+{
+  "name": "appcompose",
+  "version": "0.0.0",
+  "description": "Build predifined app based the configuration",
+  "homepage": "https://github.com/androidstarters/appcompose",
+  "author": {
+    "name": "Ravindra Kumar",
+    "email": "ravidsrk@gmail.com",
+    "url": "https://github.com/androidstarters"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "android",
+    "mvp",
+    "mvvm",
+    "aac"
+  ],
+  "devDependencies": {
+    "nsp": "^2.6.3",
+    "eslint": "^4.1.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^20.0.0"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "ravidsrk/appcompose",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "license": "MIT"
+}
